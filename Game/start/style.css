@@ -1,0 +1,21 @@
+html, body{
+    box-sizing: border-box;
+    font-family: sans-serif;   
+    background-color: gray;
+}
+#name{
+    width: 300px;
+    height: 200px;
+    font-size: 100px;
+    transform: translate(700px, 100px);
+}
+.but{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    transform: translate(750px, 100px);
+    margin-top: 15px;
+}

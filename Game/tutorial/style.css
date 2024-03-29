@@ -1,0 +1,286 @@
+html, body{
+    background-color: rgb(24, 199, 24);
+    font-family: "Pixelify Sans", sans-serif;
+}
+#chel{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    margin: 50px;
+    z-index: 1;
+}
+#yhndte{
+    width: 450px;
+    height: 200px;
+    background-color: white;
+    border: black 2px solid;
+    position: absolute;
+    z-index: 10;
+    transform: translate(700px, 300px);
+    font-size: 25px;
+    display: none;
+}
+#oh{
+    width: 100%;
+    height: 30px;
+    margin-top: 140px;
+    background-color: yellow;
+    font-size: 15px;
+}
+#help{
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border: black 2px solid;
+    position: absolute;
+    z-index: 10;
+    transform: translate(700px, 300px);
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    justify-content: space-between;
+}
+#yeah{
+    background-color: green;
+    width: 100px;
+}
+#nah{
+    background-color: red;
+    width: 100px;
+}
+#help2{
+    width: 800px;
+    height: 100px;
+    background-color: white;
+    border: black 2px solid;
+    position: absolute;
+    z-index: 10;
+    transform: translate(500px, 800px);
+    font-size: 25px;
+    display: none;
+}
+#help3{
+    width: 300px;
+    height: 90px;
+    background-color: white;
+    border: black 2px solid;
+    position: absolute;
+    transform: translateY(100px);
+    z-index: 10;
+    font-size: 15px;
+    display: none;
+}
+#X{
+    width: 150px;
+    height: 150px;
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    transform: translate(490px,230px);
+}
+#mainzhach{
+    width: 100%;
+    height: 53px;
+    display: flex;
+    justify-content: space-between;
+}
+.space{
+    height: 53px;
+    display: flex;
+}
+.znach{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    width: 300px;
+    height: 50px;
+    border: 2px solid black;
+    font-size: 50px;
+    z-index: 2;
+}
+.znach:first-child{
+    margin-left: 0;
+    background-color: red;
+}
+.znach:nth-child(2){
+    background-color: blue;
+}
+#money{
+    border: 2px solid black;
+    background-color: rgb(180, 180, 29);
+    width: 200px;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 50px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+#text{
+    flex-wrap: wrap;
+ width: 400px;
+ height: 200px;
+ margin-top: 150px;
+ margin-left: 700px;
+border: 2px solid black;
+background-color: white;
+  font-size: 75px;
+  position: absolute;
+  z-index: 10;
+display: none;
+
+}
+#skills{
+    margin-left: 10px;
+    font-size: 50px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    border: 2px black solid;
+    background-color: gray;
+
+}
+#enemy{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    transform: translate(1000px, 110px);
+    position: absolute;
+    z-index: 0;
+}
+
+#enemyheal{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    color: black;
+    background-color: red;
+    transform: translate(1000px, 220px);
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+}
+#dres{
+    background-color: rgb(139, 13, 13);
+    width: 100%;
+    height: 50px;
+    transform: translateY(30px);
+}
+#dcont{
+    background-color: green;
+    width: 100%;
+    height: 50px;
+    transform: translateY(30px);
+}
+#stone{
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    display: none;
+    transform: translate(565px, 290px);
+}
+#dagon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 30;
+    background-color: orangered;
+    filter: brightness(90%);
+}
+#dagondescription{
+    display: none;
+    position: absolute;
+    background-color: white;
+    font-size: 15px;
+    width: 300px;
+    height: 125px;
+    transform: translateY(75px);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#stats{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: space-between;
+}
+#damage{
+    color: lightcoral;
+}
+#manacost{
+    color: rgb(141, 210, 233);
+}
+#cd{
+    color: black;
+}
+#dagon:hover #dagondescription{
+    display: block;
+}
+#fire{
+    width: 75px;
+    height: 75px;
+    background-color: coral;
+    transform: translate(1700px, 100px);
+}
+#nexte{
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin-top: -11px;
+    margin-left: 698px;
+}
+#nexte2{
+    width: 50px;
+    height: 30px;
+    background-image: url('pravo.png');
+    background-size: cover;
+    transform: translate(-1px, 59px);
+}
+#nexte3{
+    width: 65px;
+    height: 30px;
+    background-image: url('pravo.png');
+    background-size: cover;
+    transform: translate(-1px, 89px);
+}
+#nexte4{
+    width: 65px;
+    height: 30px;
+    background-image: url('pravo.png');
+    background-size: cover;
+    transform: translate(-1px, 89px);
+}
+#nexte5{
+    width: 100px;
+    height: 50px;
+    transform: translate(698px, 18px);
+    display: block;
+}
+#nextE{
+    width: 100px;
+    height: 50px;
+    transform: translate(698px, 18px);
+    display: block;
+}
+.textgray{
+    color: gray;
+}
+#dungeon{
+    background-color: rgb(31, 31, 56);
+    width: 50px;
+    height: 300px;
+    position: absolute;
+    left: 1870px;
+    top: 300px;
+}

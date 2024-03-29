@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+	<script src="js.js"></script>
+	<script src="help.js"></script>
+	<title>Surface</title>
+</head>
+<body oncontextmenu="return false;" ondragstart="return false;" onselectstart="return false;">
+	<div id="yhndte"><b>You have not defeated the enemy!</b><button id='oh' onclick="yhave()">Ok</button></div>
+	<div id="help">
+	    <b>Hello! Would you like to undergo training?</b>	
+		<button onclick="yes()" id="yeah">Yes</button>
+		<button onclick="no()" id="nah">No</button>
+	</div>
+	<div id="help2">First, walk around. Just press the arrows on your keyboard.</div>
+	<div id="help3">This is your HP. It is your most important attribute.If your HP drops to 0, you will lose. <button id="nexte2" onclick="helpMana()"></button></div>
+  
+	<div id="mainzhach">
+	 <div class="space">
+		<div class="znach" id="G">100</div>
+		<div class="znach" id="mana">1000</div>
+ 	 </div>
+	 <div class="space">	
+		<div id="money">0<img  src="coin.avif" alt="" id="coin"></div>
+	    <div id="skills"></div>
+     </div>
+    </div>
+	<div id="chel"></div>
+	<div id="fire"></div>
+	<div id="X">X</div>
+	<div id="stone"></div>
+	<div id="text">You dead! <button id="dres" onclick="location.reload();">Reset</button></div>
+	<div id="enemy"></div>
+	<div id="enemyheal">1000</div>
+	<div id="dungeon"></div>
+</body>
+</html> 

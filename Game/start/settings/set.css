@@ -1,0 +1,13 @@
+html, body{
+    box-sizing: border-box;
+    background-color: grey;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+#block{
+    margin-top: 200px;
+    background-color: white;
+    width: 800px;
+    height: 500px;
+}
