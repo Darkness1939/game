@@ -74,7 +74,7 @@ window.onkeydown = function move_left()
     document.getElementById('text').innerHTML = `You dead! <button id="dres" onclick="location.reload();">Reset</button>`;
     document.getElementById('text').style.display= 'flex';
  } 
-    if((x>=1510&&x<=1780)&&(y>60&&y<=230)){
+    if((x>=1510&&x<=1780)&&(y>60&&y<=320)){
        health = 100;
        document.getElementById('G').innerText = `${health}`;
     }
@@ -87,6 +87,10 @@ window.onkeydown = function move_left()
        document.getElementById('yhndte').innerHTML = `<b>Oh no! The passage is closed!</b><button id='oh' onclick="yhave()">Ok</button>`;
        document.getElementById('yhndte').style.display = 'block';
     } 
+    if((x>=1620&&x<=1720)&&(y>=250&&y<=550)){
+        document.getElementById('help').innerHTML = `<b>Are you sure you want to visit the merchant?</b><button onclick="document.location='D:/game/Game/merchant/index.html'" id="yeah">Yes</button> <button onclick="no2()" id="nah">No</button>`;
+        document.getElementById('help').style.display = 'flex';
+    }
     }    
 }
 
@@ -145,4 +149,7 @@ window.onkeydown = function move_left()
      document.getElementById('enemyheal').style.display= 'none';
      document.getElementById('enemy').style.display= 'none';
      yhd = true;
+    }
+    function no2(){
+        document.getElementById('help').style.display = 'none'; 
     }

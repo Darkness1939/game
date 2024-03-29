@@ -30,6 +30,27 @@ html, body{
     background-color: yellow;
     font-size: 15px;
 }
+#help{
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border: black 2px solid;
+    position: absolute;
+    z-index: 10;
+    transform: translate(700px, 300px);
+    display: none;
+    flex-wrap: wrap;
+    font-size: 25px;
+    justify-content: space-between;
+}
+#yeah{
+    background-color: green;
+    width: 100px;
+}
+#nah{
+    background-color: red;
+    width: 100px;
+}
 #X{
     width: 150px;
     height: 150px;
@@ -198,5 +219,13 @@ display: none;
     height: 300px;
     position: absolute;
     left: -10px;
+    top: 300px;
+}
+#merchant{
+    background-color: rgb(138, 108, 25);
+    width: 50px;
+    height: 300px;
+    position: absolute;
+    left: 1870px;
     top: 300px;
 }

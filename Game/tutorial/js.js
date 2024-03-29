@@ -96,7 +96,7 @@ window.onkeydown = function move_left()
         end = true;
     }
     if((x>=1620&&x<=1720)&&(y>=250&&y<=550)){
-        document.getElementById('help').innerHTML = `<b>Are you sure you want to enter the dungeon?</b><button onclick="document.location='D:/game/Game/level 1/index.html'" id="yeah">Yes</button> <button onclick="no2()" id="nah">No</button>`;
+        document.getElementById('help').innerHTML = `<b>Are you sure you want to enter the dungeon?</b><button onclick="document.location='D:/game/Game/dungeon/index.html'" id="yeah">Yes</button> <button onclick="no2()" id="nah">No</button>`;
         document.getElementById('help').style.display = 'flex';
     }
     }    
