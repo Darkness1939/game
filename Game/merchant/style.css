@@ -11,6 +11,13 @@ html, body{
     left: 80px;
     top: 400px;
 }
+#oh{
+    width: 100%;
+    height: 30px;
+    margin-top: 140px;
+    background-color: yellow;
+    font-size: 15px;
+}
 #mainzhach{
     width: 100%;
     height: 53px;
@@ -124,7 +131,7 @@ display: none;
 #dagon:hover #dagondescription{
     display: block;
 }
-#merchant{
+#merchantdoor{
     background-color: rgb(138, 108, 25);
     width: 50px;
     height: 300px;
@@ -152,4 +159,38 @@ display: none;
 #nah{
     background-color: red;
     width: 100px;
+}
+#merchant{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: translate(900px);
+}
+#table{
+    width: 600px;
+    height: 100px;
+    background-color: saddlebrown;
+    transform: translate(650px);
+}
+#flas{
+    width: 60px;
+    height: 60px;
+}
+#flaska{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    transform: translate(670px, -90px);
+}
+#big{
+    font-size: 30px;
+}
+#coinmer{
+    width: 30px;
+    height: 30px;
+    transform: translateY(5px);
+}
+#cost{
+    transform: translate(5px,-15px);
 }

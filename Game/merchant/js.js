@@ -3,8 +3,12 @@ var y = 400;
 var health = 100;
 var energy = 1000;
 var ehealth = 1000;
-var coins = 5;
+localStorage.setItem('coins', 5);
+window.onload = function(){
+    document.getElementById('money').innerHTML = `${localStorage.getItem('coins')}<img  src="D:/game/Game/tutorial/coin.avif" alt="" id="coin">`;
+}
 let end = false;
+
 window.onkeydown = function move_left()
 { 
   if(!end){
@@ -66,9 +70,25 @@ window.onkeydown = function move_left()
         document.getElementById('help').innerHTML = `<b>Are you sure you want to come back?</b><button onclick="document.location='D:/game/Game/merchant/index.html'" id="yeah">Yes</button> <button onclick="no2()" id="nah">No</button>`;
         document.getElementById('help').style.display = 'flex';
      } 
+    if((x==560)&&(y>=-50&&y<=260)){
+         x=x-20;
+         document.getElementById('help').innerHTML = `<b>You cant come here.</b><button id='oh' onclick="no2()">Ok</button>`;
+         document.getElementById('help').style.display = 'flex';
+    }
+    if((x>=560&&x<1260)&&(y==260)){
+        y=y+20;
+        document.getElementById('help').innerHTML = `<b>Buy or leave!</b><button id='oh' onclick="no2()">Ok</button>`;
+        document.getElementById('help').style.display = 'flex';
+   }
+   if((x==1260)&&(y>=-50&&y<=260)){
+    x=x+20;
+    document.getElementById('help').innerHTML = `<b>You cant come here.</b><button id='oh' onclick="no2()">Ok</button>`;
+    document.getElementById('help').style.display = 'flex';
+}
       }    
    }
 
    function no2(){
     document.getElementById('help').style.display = 'none'; 
 }
+    
