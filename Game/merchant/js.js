@@ -84,7 +84,11 @@ window.onkeydown = function move_left()
     x=x+20;
     document.getElementById('help').innerHTML = `<b>You cant come here.</b><button id='oh' onclick="no2()">Ok</button>`;
     document.getElementById('help').style.display = 'flex';
-}
+    }
+    if((x>=650&&x<=670)&&(y==270)){
+        document.getElementById('help').innerHTML = `<b>Are you sure you want to purchase this item?</b><button onclick="" id="yeah">Yes</button> <button onclick="no2()" id="nah">No</button>`;
+    document.getElementById('help').style.display = 'flex'; 
+    }
       }    
    }
 

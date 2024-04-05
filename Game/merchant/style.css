@@ -178,7 +178,7 @@ display: none;
 }
 #flaska{
     width: 70px;
-    height: 70px;
+    height: 80px;
     display: flex;
     flex-wrap: wrap;
     transform: translate(670px, -90px);
@@ -192,5 +192,5 @@ display: none;
     transform: translateY(5px);
 }
 #cost{
-    transform: translate(5px,-15px);
+    transform: translate(5px,-10px);
 }
