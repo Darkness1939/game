@@ -3,7 +3,10 @@ var y = 400;
 var health = 100;
 var energy = 1000;
 var ehealth = 1000;
-localStorage.setItem('coins', 5);
+var amounttot = 0; 
+var c = 30;
+localStorage.setItem('coins', c);
+
 window.onload = function(){
     document.getElementById('money').innerHTML = `${localStorage.getItem('coins')}<img  src="D:/game/Game/tutorial/coin.avif" alt="" id="coin">`;
 }
@@ -86,12 +89,31 @@ window.onkeydown = function move_left()
     document.getElementById('help').style.display = 'flex';
     }
     if((x>=650&&x<=670)&&(y==270)){
-        document.getElementById('help').innerHTML = `<b>Are you sure you want to purchase this item?</b><button onclick="" id="yeah">Yes</button> <button onclick="no2()" id="nah">No</button>`;
+        document.getElementById('help').innerHTML = `<b>Are you sure you want to purchase this item?</b><button onclick="buytotem()" id="yeah">Yes</button> <button onclick="no2()" id="nah">No</button>`;
     document.getElementById('help').style.display = 'flex'; 
     }
       }    
    }
 
+   function buytotem(){
+    if(c>=15&&amounttot==0){
+        c=c-15;
+        localStorage.clear;
+        localStorage.setItem('coins', c);
+        document.getElementById('money').innerHTML = `${localStorage.getItem('coins')}<img  src="D:/game/Game/tutorial/coin.avif" alt="" id="coin">`;
+        document.getElementById('help').style.display = 'none'; 
+        let div = document.createElement('div');
+        div.id = "totem";
+        div.innerHTML = `<img src="totem.webp" alt="" id="tot"><div id="totemdescription">The totem of immortality is an unusual item that can save its owner from death, even from the ***** Dragon (I didn’t hear it because the merchant spoke quickly). You don't need to press it. Used once. Hmm, looks familiar.</div>`;
+        amounttot = 1;
+        document.body.append(div);  
+        
+    }
+    else{
+        document.getElementById('help').innerHTML = `<b>You can't buy it. Get out of here. Do not waste my time.</b><button id='oh1' onclick="no2()">Ok</button>`;
+    }
+   
+   }
    function no2(){
     document.getElementById('help').style.display = 'none'; 
 }
