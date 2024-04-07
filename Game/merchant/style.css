@@ -7,7 +7,6 @@ html, body{
     height: 100px;
     background-color: black;
     position: fixed;
-    z-index: 1;
     left: 80px;
     top: 400px;
 }
@@ -190,10 +189,10 @@ display: none;
     flex-wrap: wrap;
     transform: translate(670px, -90px);
 }
-#big{
+.big{
     font-size: 30px;
 }
-#coinmer{
+.coinmer{
     width: 30px;
     height: 30px;
     transform: translateY(5px);
@@ -208,7 +207,7 @@ display: none;
     font-size: 12px;
     width: 300px;
     height: 125px;
-    transform: translate(-105px);
+    transform: translate(-115px, 20px);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 2;
 }
@@ -240,4 +239,18 @@ display: none;
 }
 #cost2{
     transform: translate(5px,-40px);
+}
+#edgedescription{
+    display: none;
+    position: absolute;
+    background-color: white;
+    font-size: 12px;
+    width: 300px;
+    height: 125px;
+    transform: translate(-115px, 20px);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+#edge1:hover #edgedescription{
+    display: block;
 }
